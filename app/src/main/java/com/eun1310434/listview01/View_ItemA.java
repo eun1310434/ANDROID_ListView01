@@ -1,14 +1,14 @@
 /*=====================================================================
-□ Infomation
-  ○ Data : 07.03.2018
+□ INFORMATION
+  ○ Data : 23.05.2018
   ○ Mail : eun1310434@naver.com
   ○ Blog : https://blog.naver.com/eun1310434
   ○ Reference : Do it android app Programming
 
-□ Function
-  ○ 각각의 Item에 맞게 View를 제작
+□ STUDY
+  ○ ListView에 표현하는데 많은 Item들을 Adapter를 활용하여 효과적으로 관리ㄴ
 
-□ Study
+□ FUNCTION
   ○
 =====================================================================*/
 package com.eun1310434.listview01;

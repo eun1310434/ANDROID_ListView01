@@ -1,15 +1,17 @@
 /*=====================================================================
-□ Infomation
-  ○ Data : 07.03.2018
+□ INFORMATION
+  ○ Data : 23.05.2018
   ○ Mail : eun1310434@naver.com
   ○ Blog : https://blog.naver.com/eun1310434
   ○ Reference : Do it android app Programming
 
-□ Function
-  ○ ListView에 Adapter를 적용하여 표현
+□ STUDY
+  ○ ListView에 표현하는데 많은 Item들을 Adapter를 활용하여 효과적으로 관리ㄴ
 
-□ Study
+□ FUNCTION
+  ○ protected void onCreate(Bundle savedInstanceState)
   ○
+
 =====================================================================*/
 package com.eun1310434.listview01;
 
@@ -25,7 +27,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     EditText editTitle;
     EditText editContents;
-
 
     ListView listView;
     ListViewAdapter adapter;
@@ -71,6 +72,5 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "선택 : " + item.getTitle(), Toast.LENGTH_LONG).show();
             }
         });
-
     }
 }
