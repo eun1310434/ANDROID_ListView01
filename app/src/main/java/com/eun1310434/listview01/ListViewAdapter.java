@@ -24,6 +24,7 @@ public class ListViewAdapter extends BaseAdapter {
 
     ArrayList<ItemData> items = new ArrayList<ItemData>();
     Context ApplicationContext;
+    View_ItemA view;
 
     public ListViewAdapter(Context context){
         ApplicationContext = context;
@@ -48,19 +49,11 @@ public class ListViewAdapter extends BaseAdapter {
         return position;
     }
 
-    View_ItemA view;
     @Override
     public View getView(int position, View convertView, ViewGroup viewGroup) {
-
-        //각각의 Item을 보여주기 위한 부분화면 만들기
-        if(convertView == null){
-            view = new View_ItemA(ApplicationContext);
-        }else{
-            view = (View_ItemA) convertView;
-        }
-
-        ItemData item = items.get(position);
-        view.setItem(item);
+        if(convertView == null) view = new View_ItemA(ApplicationContext);
+        else view = (View_ItemA) convertView;
+        view.setItem(items.get(position));
         return view;
     }
 }

@@ -38,7 +38,9 @@ public class View_ItemA extends LinearLayout {
     public void init(Context context) {
         //Background에서 실행중인 서비스 중 LAYOUT_INFLATER_SERVICE를 활용
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        inflater.inflate(R.layout.view_item_a, this, true); // this = (ViewGroup) this.getRootView() //LinearLayout
+        inflater.inflate(R.layout.view_item_a, this, true);
+
+        // this = (ViewGroup) this.getRootView() //LinearLayout
         //inflater.inflate(R.layout.view_item_a, (ViewGroup) this.getRootView(), true);
 
         textView = (TextView) findViewById(R.id.textView);
@@ -47,8 +49,8 @@ public class View_ItemA extends LinearLayout {
     }
 
     public void setItem(ItemData it) {
-        textView.setText(it.Title);
-        textView2.setText(it.Contents);
-        imageView.setImageResource(it.ImgResId);
+        textView.setText(it.getTitle());
+        textView2.setText(it.getContent());
+        imageView.setImageResource(it.getImgResId());
     }
 }

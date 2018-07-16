@@ -15,9 +15,9 @@ package com.eun1310434.listview01;
 
 public class ItemData {
 
-    String Title;
-    String Contents;
-    int ImgResId;
+    private String Title;
+    private String Contents;
+    private int ImgResId;
 
     public ItemData(String _Title, String _Contents) {
         this.Title = _Title;
@@ -30,7 +30,6 @@ public class ItemData {
         this.ImgResId = _ImgResId;
     }
 
-
     public int getImgResId() {
         return ImgResId;
     }
@@ -39,11 +38,11 @@ public class ItemData {
         this.ImgResId = _ImgResId;
     }
 
-    public String getMobile() {
+    public String getContent() {
         return Contents;
     }
 
-    public void setMobile(String _Contents) {
+    public void setContent(String _Contents) {
         this.Contents = _Contents;
     }
 

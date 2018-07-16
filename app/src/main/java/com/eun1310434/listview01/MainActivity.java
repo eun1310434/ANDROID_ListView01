@@ -6,7 +6,7 @@
   ○ Reference : Do it android app Programming
 
 □ STUDY
-  ○ ListView에 표현하는데 많은 Item들을 Adapter를 활용하여 효과적으로 관리ㄴ
+  ○ ListView에 표현하는데 많은 Item들을 Adapter를 활용하여 효과적으로 관리
 
 □ FUNCTION
   ○ protected void onCreate(Bundle savedInstanceState)
